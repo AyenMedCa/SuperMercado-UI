@@ -1,16 +1,23 @@
 <!-- src/app/supermercado-list/supermercado-list.component.html -->
 <h1 class="supermercado-title">Lista de supermercados</h1>
 <hr class="supermercado-separator">
-<button mat-icon-button class="add-button" (click)="openAddSupermercadoDialog()">
-  <mat-icon>add</mat-icon>
-</button>
 
-<div *ngIf="supermercados.length > 0" class="supermercado-list">
-  <div *ngFor="let supermercado of supermercados" class="supermercado-card-container">
-    <app-supermercado-card [supermercado]="supermercado"></app-supermercado-card>
+<div *ngIf="isLoggedIn; else notLoggedIn">
+  <button mat-icon-button class="add-button" (click)="openAddSupermercadoDialog()">
+    <mat-icon>add</mat-icon>
+  </button>
+
+  <div *ngIf="supermercados.length > 0" class="supermercado-list">
+    <div *ngFor="let supermercado of supermercados" class="supermercado-card-container">
+      <app-supermercado-card [supermercado]="supermercado"></app-supermercado-card>
+    </div>
+  </div>
+
+  <div *ngIf="supermercados.length === 0">
+    <p>No hay supermercados disponibles.</p>
   </div>
 </div>
 
-<div *ngIf="supermercados.length === 0">
-  <p>No hay supermercados disponibles.</p>
-</div>
+<ng-template #notLoggedIn>
+  <p>Por favor, inicie sesión para ver la lista de supermercados.</p>
+</ng-template>

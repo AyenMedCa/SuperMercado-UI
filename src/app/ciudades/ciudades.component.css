@@ -1,9 +1,40 @@
-/* src/app/add-supermercado-dialog/add-supermercado-dialog.component.css */
-mat-form-field {
-  width: 100%;
+/* src/app/your-component/your-component.component.css */
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-button[type="submit"] {
-  margin-top: 20px;
-  width: 100%;
+table {
+  width: 80%;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+th.mat-header-cell {
+  background-color: darkslategrey;
+  color: white;
+  text-align: center;
+}
+
+td.mat-cell {
+  text-align: center;
+  padding: 8px;
+}
+
+tr.mat-header-row, tr.mat-row {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.mat-elevation-z8 {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+th.mat-header-cell, td.mat-cell {
+  border-right: 1px solid #e0e0e0;
+  color: black;
+}
+
+th.mat-header-cell:last-child, td.mat-cell:last-child {
+  border-right: none;
 }
