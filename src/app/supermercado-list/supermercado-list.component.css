@@ -1,0 +1,35 @@
+/* src/app/supermercado-list/supermercado-list.component.css */
+.supermercado-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.supermercado-title {
+  margin-top: 20px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.supermercado-separator {
+  margin: 0 20px;
+}
+
+.supermercado-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.supermercado-card-container {
+  flex: 1 1 300px;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.add-button {
+  margin-left: auto;
+}

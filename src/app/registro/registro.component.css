@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.form-container {
+  width: 300px;
+  padding: 20px;
+  background-color: darkslategrey;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid darkslategrey;
+}
+
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.mat-form-field-label {
+  color: darkslategrey;
+}
+
+.mat-input-element {
+  color: black;
+}
+
+.mat-form-field-underline {
+  background-color: darkslategrey;
+}
+
+.mat-form-field-ripple {
+  background-color: darkslategrey;
+}
+
+.mat-raised-button {
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: darkslategrey;
+}

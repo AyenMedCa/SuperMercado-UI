@@ -1,0 +1,21 @@
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+}
+mat-dialog-content{
+  background-color: darkslategrey;
+}
+
+button, button[type="submit"]{
+  background-color: dimgray;
+}
+
+.mat-dialog-container {
+  background-color: darkslategrey; /* Cambia el color de fondo según tu preferencia */
+}
+

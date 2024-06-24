@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>Añadir Supermercado</h1>
+<div mat-dialog-content>
+  <form [formGroup]="supermercadoForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre</mat-label>
+      <input matInput formControlName="nombre" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>NIT</mat-label>
+      <input matInput formControlName="NIT" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Dirección</mat-label>
+      <input matInput formControlName="direccion" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Latitud</mat-label>
+      <input matInput formControlName="latitud" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Longitud</mat-label>
+      <input matInput formControlName="longitud" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Ciudad</mat-label>
+      <mat-select formControlName="ciudad_id" required>
+        <mat-option *ngFor="let ciudad of ciudades" [value]="ciudad.id">{{ ciudad.nombre }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div>
+      <span style="margin-left: 40px; margin-right: 80px">Logo</span>
+    <button mat-raised-button (click)="fileInput.click()">Seleccionar Archivo</button>
+    <input #fileInput type="file" (change)="onFileChange($event)" style="position: absolute; opacity: 0; height: 0; width: 0; top: -100px; left: -100px;">
+    </div>
+    <button mat-raised-button color="primary" type="submit">Añadir</button>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancelar</button>
+</div>

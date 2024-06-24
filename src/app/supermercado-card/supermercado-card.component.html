@@ -1,0 +1,21 @@
+<mat-card>
+  <div class="logo-container">
+    <img mat-card-image [src]="supermercado.logo" alt="Logo de {{ supermercado.nombre }}">
+  </div>
+  <mat-card-content>
+    <h2>{{ supermercado.nombre }}</h2>
+    <p><strong>NIT:</strong> {{ supermercado.NIT }}</p>
+    <p><strong>Dirección:</strong> {{ supermercado.direccion }}</p>
+    <p><strong>Latitud:</strong> {{ supermercado.latitud }}</p>
+    <p><strong>Longitud:</strong> {{ supermercado.longitud }}</p>
+    <p><strong>Ciudad:</strong> {{ ciudadNombre }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-icon-button color="primary" (click)="onEdit()">
+      <mat-icon>edit</mat-icon>
+    </button>
+    <button mat-icon-button color="warn" (click)="onDelete()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>

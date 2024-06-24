@@ -1,0 +1,9 @@
+/* src/app/add-supermercado-dialog/add-supermercado-dialog.component.css */
+mat-form-field {
+  width: 100%;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+}
